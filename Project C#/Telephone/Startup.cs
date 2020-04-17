@@ -15,6 +15,8 @@ using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
 using Telephone.Controllers;
 using Telephone.Models;
 using Newtonsoft.Json;
+using Telephone.Interfaces.Repository;
+using Telephone.GenericRepository;
 
 namespace Telephone
 {
@@ -38,6 +40,10 @@ namespace Telephone
             // services.AddScoped<telephoneContext>();
             services.AddDbContext<telephoneContext>(options =>
                      options.UseSqlServer(Configuration.GetConnectionString("telephone")));
+
+            services.AddTransient<ICityRepository, CityRepository>();
+            services.AddTransient<ITalksRepository, TalksRepository>();
+            services.AddTransient<ISubscribesRepository, SubscribesRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

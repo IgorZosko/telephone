@@ -6,7 +6,7 @@ using Telephone.Interfaces.Repository;
 using Telephone.Models;
 using Telephone.GenericRepository;
 
-namespace WebApiEF.Repository.SQL_Repository
+namespace Telephone.GenericRepository
 {
     public class CityRepository : GenericRepository<City>, ICityRepository
     {
