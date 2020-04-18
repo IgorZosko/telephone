@@ -1,0 +1,32 @@
+﻿@page "/subscribe"
+@using BlazorApp1.Data
+@inject HttpClient Http
+@inject Subscribe
+
+<h3>Subscribe</h3>
+<hr />
+
+<p>
+    <a href="/addsubscribe">Create New</a>
+</p>
+@if (IdAbonent == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Ingredients</th>
+                <th>Description</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @code{
+
+            }

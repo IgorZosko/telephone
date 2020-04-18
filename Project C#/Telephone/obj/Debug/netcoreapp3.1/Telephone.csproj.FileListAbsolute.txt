@@ -146,5 +146,14 @@ F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalys
 F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Blazored.LocalStorage.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
 F:\GIT\Project C#\Telephone\obj\Debug\netcoreapp3.1\Telephone.csproj.CoreCompileInputs.cache
 F:\GIT\Project C#\Telephone\obj\Debug\netcoreapp3.1\Telephone.MvcApplicationPartsAssemblyInfo.cache
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\FluentValidation.dll

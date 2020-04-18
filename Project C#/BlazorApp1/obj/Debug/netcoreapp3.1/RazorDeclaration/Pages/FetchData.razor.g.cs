@@ -77,6 +77,13 @@ using BlazorApp1.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "F:\GIT\Project C#\BlazorApp1\_Imports.razor"
+using Telephone;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "F:\GIT\Project C#\BlazorApp1\Pages\FetchData.razor"
 using BlazorApp1.Data;
 
