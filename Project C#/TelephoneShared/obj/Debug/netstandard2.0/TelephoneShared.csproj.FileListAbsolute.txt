@@ -1,0 +1,9 @@
+F:\GIT\Project C#\TelephoneShared\bin\Debug\netstandard2.0\TelephoneShared.deps.json
+F:\GIT\Project C#\TelephoneShared\bin\Debug\netstandard2.0\TelephoneShared.dll
+F:\GIT\Project C#\TelephoneShared\obj\Debug\netstandard2.0\TelephoneShared.csprojAssemblyReference.cache
+F:\GIT\Project C#\TelephoneShared\obj\Debug\netstandard2.0\TelephoneShared.AssemblyInfoInputs.cache
+F:\GIT\Project C#\TelephoneShared\obj\Debug\netstandard2.0\TelephoneShared.AssemblyInfo.cs
+F:\GIT\Project C#\TelephoneShared\bin\Debug\netstandard2.0\TelephoneShared.pdb
+F:\GIT\Project C#\TelephoneShared\obj\Debug\netstandard2.0\TelephoneShared.dll
+F:\GIT\Project C#\TelephoneShared\obj\Debug\netstandard2.0\TelephoneShared.pdb
+F:\GIT\Project C#\TelephoneShared\obj\Debug\netstandard2.0\TelephoneShared.csproj.CoreCompileInputs.cache

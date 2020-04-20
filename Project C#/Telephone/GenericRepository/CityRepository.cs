@@ -12,7 +12,7 @@ namespace Telephone.GenericRepository
     {
         public CityRepository(telephoneContext context) : base(context)
         {
-
+            
         }
     }
 }
