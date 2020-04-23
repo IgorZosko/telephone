@@ -76,6 +76,27 @@ using Blazor.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "F:\GIT\Project C#\Blazor\_Imports.razor"
+using Blazored;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "F:\GIT\Project C#\Blazor\_Imports.razor"
+using Blazored.Modal;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "F:\GIT\Project C#\Blazor\_Imports.razor"
+using Blazored.Modal.Services;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/error")]
     public partial class Error : Microsoft.AspNetCore.Components.ComponentBase
     {

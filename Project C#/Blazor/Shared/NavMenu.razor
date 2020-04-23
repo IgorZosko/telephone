@@ -5,7 +5,7 @@
     </button>
 </div>
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu" >
     <ul class="nav flex-column">
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
@@ -18,15 +18,19 @@
             </NavLink>
         </li>
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            <NavLink class="nav-link" href="subscribes">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Subscribe
             </NavLink>
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="cities">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Cities
             </NavLink>
-
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="talks">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Talk
+            </NavLink>
         </li>
     </ul>
 </div>

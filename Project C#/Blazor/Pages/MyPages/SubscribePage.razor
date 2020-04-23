@@ -1,0 +1,54 @@
+﻿@page "/Subscribes"
+@using TelephoneShared.Models
+@using Blazor.Service
+@inject SubscribeService controller
+<h3>Subscribe</h3>
+<hr />
+
+
+
+@if (subscribe is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class='table table-hover'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Numbe Phone</th>
+                <th>INPP</th>
+                <th>Street</th>
+                <th>Bank Account</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var subscribes in subscribe)
+            {
+
+            <tr>
+                @*--------ToDo---------*@
+                <td>@subscribes.IdAbonent</td>
+                <td>@subscribes.NumberPhone</td>
+                <td>@subscribes.Inpp</td>
+                <td>@subscribes.Street</td>
+                <td>@subscribes.BankAccount</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+@code{
+
+    Subscribe[] subscribe;
+    protected override async Task OnInitializedAsync()
+    {
+        await load();
+    }
+    protected async Task load()
+    {
+        subscribe = await controller.GetSubscribesAsync();
+    }
+}
+

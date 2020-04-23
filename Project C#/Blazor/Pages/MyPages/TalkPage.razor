@@ -1,0 +1,56 @@
+﻿@page "/Talks"
+@using TelephoneShared.Models
+@using Blazor.Service
+@inject TalkService controller
+<h3>Talk</h3>
+<hr />
+
+
+
+@if (talk is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class='table table-hover'>
+        <thead>
+            <tr>
+                <th>ID Talk</th>
+                <th>ID Abonent</th>
+                <th>ID City</th>
+                <th>Time Talk</th>
+                <th>Date</th>
+                <th>Time of date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var talks in talk)
+            {
+
+                <tr>
+                    @*--------ToDo---------*@
+                    <td>@talks.IdTalk</td>
+                    <td>@talks.IdAbonent</td>
+                    <td>@talks.IdCity</td>
+                    <td>@talks.TimeTalk</td>
+                    <td>@talks.Ddate</td>
+                    <td>@talks.TimeOfDate</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@code{
+
+    Talk[] talk;
+    protected override async Task OnInitializedAsync()
+    {
+        await load();
+    }
+    protected async Task load()
+    {
+        talk = await controller.GetTalksAsync();
+    }
+}
+

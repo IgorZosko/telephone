@@ -53,6 +53,7 @@ namespace Telephone
             services.AddTransient<ITalksRepository, TalksRepository>();
             services.AddTransient<ISubscribesRepository, SubscribesRepository>();
             services.AddServerSideBlazor();
+            services.AddHttpClient();
            
         }
 

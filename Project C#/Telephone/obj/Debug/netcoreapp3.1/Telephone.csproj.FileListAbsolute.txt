@@ -154,6 +154,9 @@ F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Compone
 F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
 F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.JSInterop.dll
 F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Http.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\FluentValidation.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Telephone.StaticWebAssets.xml
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\MatBlazor.dll
+F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Blazor.HttpClient.dll
 F:\GIT\Project C#\Telephone\obj\Debug\netcoreapp3.1\Telephone.csproj.CoreCompileInputs.cache
 F:\GIT\Project C#\Telephone\obj\Debug\netcoreapp3.1\Telephone.MvcApplicationPartsAssemblyInfo.cache
-F:\GIT\Project C#\Telephone\bin\Debug\netcoreapp3.1\FluentValidation.dll

@@ -26,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/a88loRbsZS8d2Ex8TZbyTK1hZqOamKiXa2IEA9vkncDLBe1SD3/api": {}
         },
         "frameworks": {
           "netstandard2.0": {

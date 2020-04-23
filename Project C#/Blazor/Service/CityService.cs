@@ -6,9 +6,9 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Telephone.Controllers;
-using TelephoneShared.Models;
+using Telephone.Models;
 
-namespace Blazor.Data
+namespace Blazor.Service
 {
     public class CityService
     {
@@ -21,7 +21,7 @@ namespace Blazor.Data
             return JsonConvert.DeserializeObject<City[]>(json);
         }
 
-        public async Task<City> GetCitysByIdAsync(string id)
+        public async Task<City> GetCitysByIdAsync(int id)
         {
             HttpClient http = new HttpClient();
             var json = await http.GetStringAsync($"{baseUrl}api/Cities/{id}");
@@ -40,11 +40,11 @@ namespace Blazor.Data
             return await client.PutAsync($"{baseUrl}api/Cities/{id}", getStringContentFromObject(student));
         }
 
-        public async Task<HttpResponseMessage> DeleteCityAsync(string id)
+        public async Task<HttpResponseMessage> DeleteCityAsync(int id)
         {
             var client = new HttpClient();
-            return await client.DeleteAsync($"{baseUrl}api/Cities/{id}");
-        }
+            return await client.DeleteAsync($"{baseUrl}api/Cities/{id}" );
+        }   
         
         private StringContent getStringContentFromObject(object obj)
         {

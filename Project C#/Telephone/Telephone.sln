@@ -5,11 +5,9 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telephone", "Telephone.csproj", "{5CABA464-CC5E-4C04-89E1-C15474D63D7E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorTelephone", "..\BlazorTelephone\BlazorTelephone.csproj", "{E0F01D31-5F71-4108-B081-E20FCCBFC804}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelephoneShared", "..\TelephoneShared\TelephoneShared.csproj", "{6D4BED1A-718E-4CDE-B376-66D5269F8494}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor", "..\Blazor\Blazor.csproj", "{B971CA9F-D754-4BD6-AB9C-D66DB9A84FB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor", "..\Blazor\Blazor.csproj", "{B971CA9F-D754-4BD6-AB9C-D66DB9A84FB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +19,6 @@ Global
 		{5CABA464-CC5E-4C04-89E1-C15474D63D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CABA464-CC5E-4C04-89E1-C15474D63D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CABA464-CC5E-4C04-89E1-C15474D63D7E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0F01D31-5F71-4108-B081-E20FCCBFC804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0F01D31-5F71-4108-B081-E20FCCBFC804}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0F01D31-5F71-4108-B081-E20FCCBFC804}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0F01D31-5F71-4108-B081-E20FCCBFC804}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6D4BED1A-718E-4CDE-B376-66D5269F8494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6D4BED1A-718E-4CDE-B376-66D5269F8494}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D4BED1A-718E-4CDE-B376-66D5269F8494}.Release|Any CPU.ActiveCfg = Release|Any CPU

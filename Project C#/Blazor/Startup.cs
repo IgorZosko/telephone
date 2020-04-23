@@ -8,7 +8,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Blazor.Data;
+using Blazor.Service;
+using Blazored.Modal;
 
 namespace Blazor
 {
@@ -27,9 +28,12 @@ namespace Blazor
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddHttpClient<CityService>();
-            services.AddSingleton<WeatherForecastService>();
+            services.AddHttpClient();
+            services.AddHttpClient<CityService>();  
             services.AddSingleton<CityService>();
+            services.AddSingleton<SubscribeService>();
+            services.AddSingleton<TalkService>();
+            services.AddBlazoredModal();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,196 @@
+﻿@page "/Cities"
+@using Telephone.Models
+@using Blazor.Service
+@inject CityService controller
+@inject IModalService Modal
+<h3>City </h3>
+<hr />
+
+@*if (city != null && mode == MODE.Add ) // Insert form
+    {
+        <input placeholder="Name City" @bind="@namecity" />
+        <br />
+        <input placeholder="RateAm" @bind="@rateam" />
+        <br />
+        <input placeholder="RatePm" @bind="@ratepm" />
+        <br />
+        <input placeholder="Discount" @bind="@discount" />
+        <br />
+        <button @onclick="Insert" class="btn btn-warning">Insert </button>
+    <button @onclick="@(() => Modal.Show<AddCityPage>("Modal Popup Example"))" class="btn btn-primary">View </button>
+
+    }*@
+
+
+    @if (city != null && mode == MODE.Add)
+    {
+
+<EditForm Context="formContext" Model="city" OnValidSubmit="Insert">
+    <p>
+        <label class="control-label col-md-12">ID</label>
+
+        <input class="form-control" @bind="idcity" />
+
+    </p>
+    <p>
+        <label class="control-label col-md-12">City</label>
+
+        <input class="form-control" @bind="namecity" />
+    </p>
+    <p>
+        <label class="control-label col-md-12">Am</label>
+
+        <input class="form-control" @bind="rateam" />
+    </p>
+    <p>
+        <label class="control-label col-md-12">City</label>
+
+        <input class="form-control" @bind="ratepm" />
+    </p>
+    <p>
+        <label class="control-label col-md-12">City</label>
+
+        <input class="form-control" @bind="discount" />
+    </p>
+        <br />
+        <button @onclick="Insert" class="btn btn-warning">Insert</button>
+
+</EditForm>
+}
+
+@if (city is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <button @onclick="Add" class="btn btn-success">Add</button>
+
+    <table class='table table-hover'>
+        <thead>
+            <tr>
+                <th>ID </th>
+                <th>Name  City</th>
+                <th>RateAm</th>
+                <th>RatePm</th>
+                <th>Discount</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var citys in city)
+            {
+                <tr @onclick="(() => Show(citys.IdCity))">
+                    <td>@citys.IdCity </td>
+                    <td>@citys.NameCity</td>
+                    <td>@citys.RateAm</td>
+                    <td>@citys.RatePm</td>
+                    <td>@citys.DiscountPercent</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@if (city != null && mode == MODE.EditDelete) // Update & Delete form
+{
+    <input placeholder="First Name" @bind="@namecity" />
+    <br />
+    <input placeholder="First Name" @bind="@rateam" />
+    <br />
+    <input placeholder="Last Name" @bind="@ratepm" />
+    <br />
+    <input placeholder="School" @bind="@discount" />
+    <br />
+    <button @onclick="Update" class="btn btn-primary">Update</button>
+    <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <button @onclick="Delete" class="btn btn-danger">Delete</button>
+}
+
+
+@code{
+
+    City[] city;
+    int idcity;
+    string namecity = null;
+    string ratepm = null;
+    string rateam = null;
+    string discount = null;
+
+    private enum MODE { None, Add, EditDelete };
+    MODE mode = MODE.None;
+    City citys;
+    protected override async Task OnInitializedAsync()
+    {
+        await load();
+
+    }
+    protected async Task load()
+    {
+        city = await controller.GetCitysAsync();
+    }
+    protected async Task Insert()
+    {
+
+        City s = new City()
+        {
+            IdCity = idcity,
+            NameCity = namecity,
+            RateAm = rateam,
+            RatePm = ratepm,
+            DiscountPercent = discount
+        };
+
+        await controller.InsertCityAsync(s);
+        ClearFields();
+        await load();
+        mode = MODE.None;
+    }
+
+    protected void ClearFields()
+    {
+        namecity = string.Empty;
+        rateam = string.Empty;
+        ratepm = string.Empty;
+        discount = string.Empty;
+    }
+    protected void Add()
+    {
+        mode = MODE.Add;
+    }
+    protected async Task Update()
+    {
+
+        City s = new City()
+        {
+            IdCity = idcity,
+            NameCity = namecity,
+            RateAm = rateam,
+            RatePm = ratepm,
+            DiscountPercent = discount
+        };
+
+        await controller.UpdateCityAsync(idcity.ToString(), s);
+        ClearFields();
+        await load();
+        mode = MODE.None;
+    }
+
+    protected async Task Delete()
+    {
+        await controller.DeleteCityAsync(idcity);
+        ClearFields();
+        await load();
+        mode = MODE.None;
+    }
+
+    protected async Task Show(int id)
+    {
+        citys = await controller.GetCitysByIdAsync(id);
+        idcity = citys.IdCity;
+        namecity = citys.NameCity;
+        ratepm = citys.RatePm;
+        rateam = citys.RateAm;
+        discount = citys.DiscountPercent;
+        mode = MODE.EditDelete;
+    }
+}
+

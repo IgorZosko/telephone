@@ -26,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/a88loRbsZS8d2Ex8TZbyTK1hZqOamKiXa2IEA9vkncDLBe1SD3/api": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -49,10 +50,22 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Blazored.Modal": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
             "Microsoft.AspNetCore.Blazor.HttpClient": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.0-preview8.19405.7, )"
+              "version": "[3.1.0-preview4.19579.2, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             }
           },
           "imports": [
@@ -99,7 +112,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/a88loRbsZS8d2Ex8TZbyTK1hZqOamKiXa2IEA9vkncDLBe1SD3/api": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -174,7 +188,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/a88loRbsZS8d2Ex8TZbyTK1hZqOamKiXa2IEA9vkncDLBe1SD3/api": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -197,6 +212,14 @@
             "FluentValidation": {
               "target": "Package",
               "version": "[8.6.2, )"
+            },
+            "MatBlazor": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
             },
             "Microsoft.AspNetCore.Mvc.Formatters.Json": {
               "target": "Package",
@@ -243,6 +266,10 @@
             "System.Diagnostics.Tools": {
               "target": "Package",
               "version": "[4.3.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             }
           },
           "imports": [

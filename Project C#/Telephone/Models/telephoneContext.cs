@@ -58,6 +58,8 @@ namespace Telephone.Models
                     .HasColumnName("rate_pm")
                     .HasMaxLength(15)
                     .IsFixedLength();
+                entity.Property(p => p.IdCity).ValueGeneratedOnAdd()
+                .IsRequired();
             });
 
             modelBuilder.Entity<Cost>(entity =>
@@ -112,7 +114,7 @@ namespace Telephone.Models
 
             modelBuilder.Entity<Talk>(entity =>
             {
-                entity.HasKey(e => e.IdTalk)
+                entity.HasKey(e => e.IdTalk )
                     .HasName("PK__Talk__629752E85ED897B0");
 
                 entity.Property(e => e.IdTalk)
